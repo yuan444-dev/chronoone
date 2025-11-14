@@ -182,7 +182,7 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(30, 58, 138, 0.7), transparent);
+    background: linear-gradient(to right, rgba(37, 37, 37, 0.66), transparent);
 }
 
 .hero-content {
@@ -229,6 +229,26 @@ body {
     transform: scale(1.05);
     box-shadow: 0 15px 35px rgba(239, 68, 68, 0.5);
 }
+
+.btn-hero1 {
+    background: #252525;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    animation: bounceSubtle 2s ease-in-out infinite;
+}
+
+.btn-hero1:hover {
+    background: #303030;
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.296)
+}
+
 
 .scroll-indicator {
     position: absolute;
@@ -291,14 +311,14 @@ body {
 /* Services Section */
 .services {
     background: #ef4444;
-    padding: 80px 20px;
+    padding: 130px 20px;
 }
 
 .section-title {
     font-size: 48px;
     color: white;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .section-subtitle {
@@ -326,16 +346,17 @@ body {
 .service-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background-color: #fffefead;
 }
 
 .service-icon {
     font-size: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+
 }
 
 .service-card h3 {
     font-size: 24px;
-    margin-bottom: 15px;
     color: #1f2937;
 }
 
@@ -346,8 +367,8 @@ body {
 
 /* Jobs Section */
 .jobs {
-    background: #1f2937;
-    padding: 80px 20px;
+    background: #252525;
+    padding: 180px 20px;
 }
 
 .jobs-content {
@@ -400,7 +421,7 @@ body {
 /* About Section */
 .about {
     background: #f9fafb;
-    padding: 80px 20px;
+    padding: 130px 20px;
 }
 
 .about-content {
@@ -436,7 +457,7 @@ body {
 }
 
 .mvv-card {
-    background: #1f2937;
+    background: #252525;
     color: white;
     padding: 40px;
     border-radius: 10px;
@@ -462,7 +483,7 @@ body {
 /* Contact Section */
 .contact {
     background: #f9fafb;
-    padding: 80px 20px;
+    padding: 130px 20px;
 }
 
 .section-title-dark {
@@ -546,6 +567,26 @@ body {
     50% {
         transform: translateY(-5px);
     }
+}
+
+/* Animated text for hero or card */
+.animated-text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Staggered effect for multiple elements */
+.animated-text.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.animated-text.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.animated-text.delay-3 {
+    animation-delay: 0.6s;
 }
 
 /* Responsive */
