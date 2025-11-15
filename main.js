@@ -83,3 +83,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.querySelectorAll(".mvv-card").forEach(card => {
+    card.querySelector(".mvv-header").addEventListener("click", () => {
+
+        // Close others
+        document.querySelectorAll(".mvv-card").forEach(other => {
+            if (other !== card) other.classList.remove("active");
+        });
+
+        // Toggle clicked card
+        card.classList.toggle("active");
+    });
+});
