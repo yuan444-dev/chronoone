@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
-    const navLinks = document.querySelectorAll('.nav-link');
+   const navLinks = document.querySelectorAll('.nav-link, .btn-primary, .btn-hero, .btn-hero1');
 
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
@@ -96,3 +96,4 @@ document.querySelectorAll(".mvv-card").forEach(card => {
         card.classList.toggle("active");
     });
 });
+
