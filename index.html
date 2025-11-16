@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChronoOne - Trucking and Logistics</title>
+    <title>ChronoOne</title>
+     <link rel="icon" href="materials/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -20,7 +21,7 @@
                 <a href="#jobs" class="nav-link">Jobs</a>
                 <a href="#about" class="nav-link">About Us</a>
                 <a href="#contact" class="nav-link">Contact Us</a>
-                <button class="btn-primary">APPLY NOW</button>
+                <a href="#jobs" class="btn-primary">APPLY NOW</a>
             </div>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -40,8 +41,8 @@
         <div class="hero-content">
             <h1 class="hero-title">Join the Movement Deliver Excellence with <span class="highlight">ChronoOne.</span></h1>
             <p class="hero-subtitle">ChronoOne Trading and Logistics Inc. is a dynamic company specializing in efficient trading solutions and reliable logistics services.</p>
-            <button class="btn-hero">APPLY NOW</button>
-            <button class="btn-hero1" href="#contact">CONTACT US</button>
+            <a href="#jobs"class="btn-hero">APPLY NOW</a>
+            <a href="#contact" class="btn-hero1">CONTACT US</a>
         </div>
         <div class="scroll-indicator">
             <div class="scroll-text">SCROLL</div>
@@ -112,21 +113,28 @@
     </div>
 </section>
 
-    <!-- Jobs Section -->
-    <section id="jobs" class="jobs">
-        <div class="container">
-            <div class="jobs-content">
-                <div class="jobs-image">
-                    <img src="materials/office-worker.jpg" alt="Team collaboration">
-                </div>
-                <div class="jobs-text">
-                    <h2>Millions Of Jobs. Find The One That's <span class="highlight">Right For You.</span></h2>
-                    <p>ChronoOne is currently hiring for passengers and driver individuals to join our growing team. If you would like to work in a collaborative team environment with advancement opportunities, please apply today!</p>
-                    <button class="btn-secondary">SEARCH FOR JOBS</button>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Jobs Section -->
+<section id="jobs" class="jobs">
+  <div class="container">
+    <div class="jobs-content">
+      <div class="jobs-image">
+        <img src="materials/office-worker.jpg" alt="Team collaboration">
+      </div>
+      <div class="jobs-text">
+        <h1>Millions Of Jobs. Find The One That's <span class="highlight">Right For You.</span></h1>
+        <p>ChronoOne is currently hiring for passengers and driver individuals to join our growing team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Job List Section (Initially Hidden) -->
+<section id="jobListSection" class="job-list-section">
+  <div class="container" id="jobContainer">
+    <!-- Jobs will be injected here by JS -->
+  </div>
+</section>
+
 
 <!-- About Section -->
 <section id="about" class="about">
@@ -222,7 +230,7 @@
                 </div>
                 <div>
                     <h4>Location</h4>
-                    <p>San Jose Del Monte, Bulacan Philippines</p>
+                    <p>Chrono One Yard, Layac, Hermosa Bataan Philippines</p>
                 </div>
             </div>
 
@@ -252,7 +260,7 @@
         </div>
 
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123456.789!2d120.9!3d14.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDQ4JzAwLjAiTiAxMjDCsDU0JzAwLjAiRQ!5e0!3m2!1sen!2sph!4v1234567890"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d647.9994620180152!2d120.43871000650557!3d14.855950907887536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339667004fa4d2e1%3A0xb664620a88e9382a!2sChrono%20One%20Yard!5e1!3m2!1sen!2sus!4v1763183467118!5m2!1sen!2sus"
                 width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
@@ -287,7 +295,7 @@
         <!-- Contact Info -->
         <div class="footer-col">
             <h4>Contact</h4>
-            <p>San Jose Del Monte, Bulacan, Philippines</p>
+            <p>Chrono One Yard, Layac, Hermosa Bataan Philippines</p>
             <p>Phone: +639369701363</p>
             <p>Email: info@chronoone.com</p>
         </div>
@@ -305,10 +313,13 @@
     </div>
 
     <div class="footer-bottom">
-        <p>© 2025 Chrono One. All rights reserved.</p>
+        <p>Copyright © 2025. Chrono One Trading and Logistic Inc. All rights reserved.</p>
     </div>
 </footer>
 
     <script src="main.js"></script>
+    <script src="joblist.js"></script>
 </body>
+
+
 </html>
