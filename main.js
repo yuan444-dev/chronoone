@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
-   const navLinks = document.querySelectorAll('.nav-link, .btn-primary, .btn-hero, .btn-hero1');
+   const navLinks = document.querySelectorAll('.nav-link, .btn-primary, .btn-hero, .btn-hero1, .footer-link');
 
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
@@ -96,4 +96,21 @@ document.querySelectorAll(".mvv-card").forEach(card => {
         card.classList.toggle("active");
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show", "active");
+            } else {
+                entry.target.classList.remove("active");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => observer.observe(section));
+});
+
 
