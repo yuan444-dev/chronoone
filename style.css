@@ -443,14 +443,14 @@ body {
 /* Job Section */
 .jobs {
     background: #252525;
-    padding: 130px 20px;
-    padding-bottom: 0;
+    padding-bottom: 200px;
+    padding-top: 250px;
     color: white;
 }
 
 .jobs-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
     align-items: center;
 }
@@ -762,6 +762,7 @@ body {
     font-size: 16px;
     line-height: 1.75;
     margin-bottom: 22px;
+    text-align: justify
 }
 
 /* Social Icons */
